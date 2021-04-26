@@ -1,0 +1,69 @@
+.mian_div {
+  background: #000;
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.mian_div ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mian_div ul li {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #42a5f5;
+  margin-left: -5px;
+  transition: .4s;
+  position: relative;
+}
+
+.mian_div ul li:hover {
+  background: white;
+}
+
+.mian_div ul li:hover > a {
+  color: #42a5f5;
+}
+
+.mian_div ul li a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  transition: .4s;
+}
+
+.mian_div ul li ul {
+  position: absolute;
+  width: 230px;
+  border-top: 3px solid red;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  transform: translateY(40px);
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+}
+
+.mian_div ul li ul li {
+  display: block;
+  margin-left: 0;
+  border-bottom: 1px solid rgba(245, 244, 244, 0.418);
+}
+
+.mian_div ul li ul li ul {
+  position: absolute;
+  top: -3px;
+  left: 100%;
+  transform: translateX(70px);
+}
+
+.mian_div ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) translateX(0);
+}
